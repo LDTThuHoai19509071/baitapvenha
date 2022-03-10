@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+<style>
+*{
+    padding: 0px;
+    margin: 0px auto;
+}
+body
+{
+    background-image: url(../hd2.jpg);
+}
+.wrapper
+{
+height: 800px;
+width: 1089px;
+background-color: antiquewhite;
+}
+nav{
+    height: 200px;
+width: 1089px;
+line-height: 50px;
+background-color: rgb(170, 44, 128);
+}
+header{
+    height: 150px;
+width: 1089px;
+background-image: url(../Header1.jpg);
+text-align: center;
+line-height: 150px;
+font-size: 100px;
+color: aquamarine;
+text-shadow: 2px 2px 2px #754923;
+}
+.content{
+    height: 400px;
+width: 1089px;
+background-color: rgb(88, 145, 74);}
+aside{
+    height: 400px;
+width: 400px;
+background-color: rgb(17, 42, 112);
+float: left;
+}
+section{
+    height: 400px;
+width: 689px;
+background-color: rgb(116, 208, 224);
+float: left;
+}
+.menu li{
+    float: left;
+    height: 50px;
+width: 150px;
+background-color: rgb(243, 64, 189);
+line-height: 50px;
+text-indent: 20px;
+background-color: rgb(202, 65, 157);
+position: relative;
+}
+a{
+    color: chocolate;
+    font-weight: bold;
+    text-decoration: none;
+}
+menu li:hover{
+    background-color: aquamarine;
+}
+li:hover>a{
+    color: antiquewhite;
+    font-style: italic;
+}
+.menu li .submenu{
+    display: none;
+    position: absolute;
+}
+.menu li :hover .submenu{
+display: block;
+}
+nav span from #txtEmail{
+    padding: 3px;
+    color: rgb(96, 25, 189);
+    border-radius: 50%;
+    text-shadow: 2px 2px 2px;
+}
+</style>
+</head>
+<body>
+    <div class="wrapper">
+        <nav>
+            <ul class="menu">
+                <li> <a href="https://iuh.edu.vn"></a></li>
+                <li> <a href="">SERVICES</a></li>
+                <li> <a href="">CONTACT</a>
+                    <UL class="submenu">
+                        <li> <a href="">PHONE</a></li>
+                        <li> <a href="">INTERNET</a></li>
+                        <li> <a href="">TIVI</a></li>
+
+                    </UL>
+                </li>
+                <li> <a href="">ABOUT</a></li>
+                <li> <a href="">HELP</a></li>
+            </ul>
+            <span>
+                <form action="dangki.php">
+                    <label for="lblEmail">Email: </label>
+                    <input type="email " name="txtEmail" id="txtEmail" required placeholder="
+                    NHAP EMAIL">
+                    <input type="submit" value="GO" id="btGO">
+                </form>
+            </span>
+        </nav>
+        <header> VIET NAM </header>
+        <div class="content">
+            <aside>
+                <article>
+                    <h5 style="position: absolute; font-weight: bold; color: crimson; text-shadow: 10px 20px 20px #214992;"> GAME SHOW </h5>
+                    <img src="../hd1.jpg" alt="" srcset="">
+                </article>
+                <article>
+                    <h5>HOAT DONG 2</h5>
+                    <img src="../Header1.jpg" alt="">
+                </article>
+                <article>
+                    <h5>HOAT DONG 3</h5>
+                    <img src="../hd3.jpg" alt="">
+                </article>
+
+            </aside>
+            <section>
+                <form action="dangki.php">
+                    <fieldset>
+                        <legend>THONG TIN CUA BAN </legend>
+                        <label for="lblHoten">HO TEN: </label>
+                        <input type="text" name="txtHT" required placeholder="Nhap ho ten"> <br> </br>
+                        <label for="lblEmail">EMAIL: </label>
+                        <input type="email" name="txtEmail" required placeholder="Nhap email"> <br> </br>
+                        <label for="lblNS">NGAY SINH: </label>
+                        <input type="date" name="txtNS" id="txtNS" required placeholder="Ngay sinh" pattern="dd/MM/yyyy"> <br> </br>
+                        <label for="lblGT">GIOI TINH: </label>
+                        <input type="radio" name="radNam" id="radNam" value="Nam" checked> <label for="Nam">Nam</label> <br> </br>
+                        <input type="radio" name="radNu" id="radNam" value="Nu" checked> <label for="Nu">Nu</label> <br> </br>
+                        <input type="submit" value="GO" id="btGO">
+                    </fieldset>
+                </form>
+            </section>
+
+        </div>
+        <footer></footer>
+    </div>
+</body>
+</html>
